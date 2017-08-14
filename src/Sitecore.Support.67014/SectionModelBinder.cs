@@ -1,13 +1,9 @@
-﻿using Sitecore.Forms.Mvc.Data.Wrappers;
-using Sitecore.Forms.Mvc.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Web.Mvc;
-
-namespace Sitecore.Support.Forms.Mvc.Controllers.ModelBinders
+﻿namespace Sitecore.Support.Forms.Mvc.Controllers.ModelBinders
 {
-    public class SectionModelBinder : Sitecore.Forms.Mvc.Controllers.ModelBinders.SectionModelBinder
+  using Sitecore.Forms.Mvc.ViewModels;
+  using System;
+  using System.Web.Mvc;
+  public class SectionModelBinder : Sitecore.Forms.Mvc.Controllers.ModelBinders.SectionModelBinder
     {
         protected override object CreateModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Type modelType)
         {
